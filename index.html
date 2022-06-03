@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="row m-5">
+        <div class="col-3 border border-dark">
+            <h3 class="text-danger text-center mt-4">Alumnos UPeU</h3>
+            <div class="container">
+                Escuela:<br>
+                <select name="Seleccionar Escuela" id="school" class="w-100 mb-1">
+                    <option value="0">Seleccionar Escuela</option>
+                    <option value="Sistemas">Sistemas</option>
+                    <option value="Civil">Civil</option>
+                    <option value="Arquitectura">Arquitectura</option>
+                </select>
+                <br>Apellidos y Nombres:<br>
+                <input type="text" class="w-100 mb-1" id="apynom">
+                <br>Correo:<br>
+                <input type="email" class="w-100 mb-1" id="corr">
+                <br>Teléfono:<br>
+                <input type="number" class="w-100 mb-1" id="telf"><br>
+                <div class="d-grid">
+                    <button class="offset-md-6 w-50 mb-md-5 mt-3 btn-primary" id="enviar">Enviar</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-9 border border-dark">
+            <div class="container mt-5">
+                <table border="1" class="w-100">
+                    <thead class="bg-primary">
+                        <tr>
+                            <th class="p-2">#</th>
+                            <th class="p-2">Escuela</th>
+                            <th class="p-2">Apellidos y Nombres</th>
+                            <th class="p-2">Correo</th>
+                            <th class="p-2">Teléfono</th>
+                            <th class="p-2">Operaciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabla">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
